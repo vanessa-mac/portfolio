@@ -1,0 +1,363 @@
+
+:root {
+    --cor-principal: #6366f1;
+    --cor-escura: #1e293b;
+    --cor-fundo: #f8fafc;
+    --cor-branco: #ffffff;
+    --cor-texto: #334155;
+    --cor-cinza: #64748b;
+}
+
+.dark-mode {
+    --cor-fundo: #0f172a;
+    --cor-escura: #f1f5f9;
+    --cor-branco: #1e293b;
+    --cor-texto: #cbd5e1;
+    --cor-cinza: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Header simples */
+header {
+    background-color: var(--cor-branco);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-principal);
+}
+
+#btn-tema {
+    background: none;
+    border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+#btn-tema:hover {
+    background: var(--cor-principal);
+    color: white;
+}
+
+/* Seções */
+section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--cor-escura);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Sobre - Layout simples em duas colunas */
+#sobre {
+    background-color: var(--cor-branco);
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.sobre-container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.sobre-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.sobre-texto p {
+    margin-bottom: 1rem;
+    color: var(--cor-cinza);
+}
+
+/* Skills como tags simples */
+.skills {
+    margin-top: 2rem;
+}
+
+.skills h3 {
+    color: var(--cor-escura);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--cor-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Projetos */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background: var(--cor-branco);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.projeto-card h3 {
+    color: var(--cor-principal);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.projeto-card p {
+    color: var(--cor-cinza);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.projeto-card a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projeto-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+#contato {
+    background-color: var(--cor-branco);
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--cor-escura);
+}
+
+.campo input,
+.campo textarea {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--cor-principal);
+}
+
+form button {
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #4f46e5;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contato-info p {
+    color: var(--cor-cinza);
+}
+
+.contato-info a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--cor-escura);
+    color: white;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sobre-texto h2 {
+        text-align: center;
+    }
+    
+    .sobre-container img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .skills-tags {
+        justify-content: center;
+    }
+    
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contato-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 2rem 3%;
+    }
+    
+    .projeto-card {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Correção footer tema escuro */
+.dark-mode footer {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+.dark-mode footer p {
+    color: #cbd5e1;
+}

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Macêdo | Portfólio</title>    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' x='50%' text-anchor='middle' font-size='70' font-family='Arial' font-weight='bold' fill='%236366f1'>VM</text></svg>">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' x='50%' text-anchor='middle' font-size='70' font-family='Arial' font-weight='bold' fill='%236366f1'>VM</text></svg>">
+    
+</head>
+<body>
+    <header>
+        <h1>Vanessa Macêdo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="btn-tema">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <div class="sobre-container">
+                <img src="perfil.png" alt="Vanessa Macêdo">
+                <div class="sobre-texto">
+                    <h2>Sobre Mim</h2>
+                    <p>Sou estudante do curso de <strong>Tecnologia em Sistemas para Internet</strong> pela UESPI.</p>
+                    <p>Estou no início da minha jornada no desenvolvimento web, aprendendo HTML, CSS e JavaScript. Busco criar interfaces simples, funcionais e bem estruturadas.</p>
+                    <p>Meu objetivo é construir uma carreira sólida na área de tecnologia, sempre aprendendo e me aprimorando a cada projeto.</p>
+                    
+                    <div class="skills">
+                        <h3>O que estou aprendendo:</h3>
+                        <div class="skills-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container" id="lista-projetos">
+                <!-- Projetos inseridos via JS -->
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <form id="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+                
+                <div class="contato-info">
+                    <p>📧 Email: vanessa_macedo1@hotmail.com</p>
+                    <p>🐙 GitHub: <a href="https://github.com/vanessa-mac" target="_blank">github.com/vanessa-mac</a></p>
+                    <p>📍 Localização: Brasil</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Vanessa Macêdo</p>
+        <p>Estudante de Sistemas para Internet</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

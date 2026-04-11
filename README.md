@@ -2,6 +2,11 @@
 
 > Portfólio profissional desenvolvido como atividade avaliativa do curso de Tecnologia em Sistemas para Internet - UESPI.
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vanessa-mac.github.io/portfolio/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
 ## 📝 Atividade Avaliativa
 
 Este projeto foi desenvolvido para a **Atividade Avaliativa 1 - Construção do MVP** da disciplina de Desenvolvimento Web, contemplando:

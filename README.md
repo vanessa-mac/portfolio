@@ -25,7 +25,7 @@ Estudante de **Tecnologia em Sistemas para Internet** na UESPI, apaixonada por d
 
 - 🌐 **Portfólio Online**: [vanessa-mac.github.io/portfolio](https://vanessa-mac.github.io/portfolio/)
 - 💼 **Repositório**: https://github.com/vanessa-mac/portfolio
-- ⚛️ **Versão React**:
+- ⚛️ **Versão React**: https://portfolio-react-vite-mu.vercel.app/
 
 ---
 
